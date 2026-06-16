@@ -33,7 +33,7 @@
     text-align:center;
     color:var(--green);
     font-weight:600;
-    letter-spacing:.06em;
+    letter-spacing:.04em;
     font-size:clamp(13px,3.4vw,16px);
     margin:0 0 14px;
     text-transform:uppercase;
@@ -111,7 +111,7 @@
     font-weight:400;
     color:var(--green);
     text-transform:uppercase;
-    font-size:clamp(27px,5vw,28px);
+    font-size:clamp(26px,5vw,28px);
     margin:0 0 6px;
     display:inline-flex;
     align-items:center;
