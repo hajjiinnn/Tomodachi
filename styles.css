@@ -48,16 +48,21 @@
     width:clamp(60px,16vw,118px);
     height:auto;
     display:block;
-    justify-self:start;
   }
+  /* logo link wrappers become the grid items */
+  .logo-link{ display:block; line-height:0; transition:opacity .15s ease; border-radius:4px; }
+  .logo-link:hover{ opacity:.82; }
+  .logo-link:focus-visible{ outline:2px solid var(--green); outline-offset:3px; }
+  .logo-link--frog{ justify-self:start; }
+  .logo-link--mims{ justify-self:end; }
   .title-wrap{ min-width:0; text-align:center; padding:2px 0; }
   .title{
     font-family:var(--display);
-    font-weight:400;
+    font-weight:900;
     color:var(--green);
     text-transform:uppercase;
     line-height:.98;
-    font-size:clamp(23px,5.4vw,33px);
+    font-size:clamp(20px,5.4vw,33px);
     margin:0;
     letter-spacing:.01em;
   }
@@ -76,7 +81,6 @@
     display:block;
     width:clamp(60px,16vw,118px);
     height:auto;
-    justify-self:end;
     margin:0;
   }
 
