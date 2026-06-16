@@ -111,7 +111,7 @@
     font-weight:400;
     color:var(--green);
     text-transform:uppercase;
-    font-size:clamp(30px,5vw,24px);
+    font-size:clamp(24px,5vw,28px);
     margin:0 0 6px;
     display:inline-flex;
     align-items:center;
