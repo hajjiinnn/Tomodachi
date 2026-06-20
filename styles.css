@@ -120,7 +120,7 @@
   }
   .special-banner .star{ width:clamp(15px,3.6vw,20px); height:auto; flex:none; }
 
-  /* name + desc now space exactly like .item h3 + .item p */
+  /* name + desc share ONE centered column so they line up at every width */
   .special-name{
     font-family:var(--body);
     font-weight:500;
@@ -128,12 +128,13 @@
     text-transform:uppercase;
     letter-spacing:.02em;
     font-size:clamp(15.5px,4vw,17px);
-    margin:0 0 3px;            /* 3px between name and its description */
+    max-width:440px;
+    margin:0 auto 3px;         /* centered + 3px between name and its description */
   }
   .special-desc{
     color:var(--ink);
     font-size:clamp(15px,3.8vw,16px);
-    /*max-width:440px;*/
+    max-width:440px;
     margin:0 auto 16px;        /* centered + 16px gap before the next name */
   }
   .special-desc:last-child{ margin-bottom:0; }  /* no trailing gap after last special */
