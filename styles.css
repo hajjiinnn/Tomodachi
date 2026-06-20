@@ -133,7 +133,7 @@
   .special-desc{
     color:var(--ink);
     font-size:clamp(15px,3.8vw,16px);
-    max-width:440px;
+    /*max-width:440px;*/
     margin:0 auto 16px;        /* centered + 16px gap before the next name */
   }
   .special-desc:last-child{ margin-bottom:0; }  /* no trailing gap after last special */
