@@ -128,15 +128,11 @@
     font-size:clamp(15.5px, 4vw, 17px);
     margin:0 0 3px; /* tight gap between name and desc, same as regular items */
   }
- .special-desc + .special-name {
-  margin-top: 16px;  /* space only between a desc and the NEXT name */
- }
   .special-desc{
     color:var(--ink);
     font-size:clamp(15px,3.8vw,16px);
     max-width:440px;
-    margin:0 auto;
-    margin-top: 16px;
+    margin:0;
   }
 
   /* ---------- sections ---------- */
