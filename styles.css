@@ -170,6 +170,41 @@
     color:var(--ink);
     font-size:clamp(15px,3.8vw,16px);
   }
+ /* ---------- sold out ---------- */
+  /* Regular items: add class "sold-out" to the .item div */
+  .item.sold-out h3,
+  .item.sold-out p{
+    text-decoration:line-through;
+    opacity:.5;
+  }
+ 
+  /* Specials: add class "sold-out" to the .special-name <p> */
+  .special-name.sold-out,
+  .special-name.sold-out + .special-desc{
+    text-decoration:line-through;
+    opacity:.5;
+  }
+ 
+  /* the "SOLD OUT" badge, sits beside the item name */
+  .item.sold-out h3::after,
+  .special-name.sold-out::after{
+    content:"Sold Out";
+    display:inline-block;       /* keeps the strikethrough from crossing the badge */
+    text-decoration:none;
+    opacity:1;
+    vertical-align:middle;
+    margin-left:8px;
+    font-family:var(--body);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    font-size:.66em;
+    line-height:1;
+    color:#fff;
+    background:var(--green);
+    padding:3px 8px;
+    border-radius:999px;
+  }
 
   footer{
     margin-top:34px;
