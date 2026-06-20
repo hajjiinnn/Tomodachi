@@ -125,8 +125,11 @@
     color:var(--green-soft);
     text-transform:uppercase;
     letter-spacing:.02em;
-    font-size:clamp(15px,3.8vw,16px);
-    margin:0 0 3px;
+    font-size:clamp(15.5px, 4vw, 17px);
+    margin:0 0 16px;
+  }
+  .special-item:last-child {
+  margin-bottom: 0;
   }
   .special-desc{
     color:var(--ink);
