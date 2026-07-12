@@ -105,11 +105,15 @@
   .special{
     text-align:center;
     margin:18px 0 6px;
+    background:var(--green);          /* green box */
+    border-radius:22px;               /* rounded corners */
+    padding:clamp(22px,5vw,32px);     /* breathing room inside the box */
+    color:#fff;                       /* default white text inside */
   }
   .special-banner{
     font-family:var(--display);
     font-weight:400;
-    color:var(--green);
+    color:#fff;                       /* white banner text */
     text-transform:uppercase;
     font-size:clamp(26px,5vw,28px);
     margin:0 0 14px;            /* matches the gap under a .section h2 */
@@ -124,7 +128,7 @@
   .special-name{
     font-family:var(--body);
     font-weight:500;
-    color:var(--green-soft);
+    color:#fff;                       /* white item names */
     text-transform:uppercase;
     letter-spacing:.02em;
     text-align:center;
@@ -133,7 +137,7 @@
     margin:0 auto 3px;         /* centered + 3px between name and its description */
   }
   .special-desc{
-    color:var(--ink);
+    color:#fff;                       /* white descriptions (readable on green) */
     font-size:clamp(15px,3.8vw,16px);
     text-align:center;
     max-width:440px;
@@ -204,6 +208,12 @@
     background:var(--green);
     padding:3px 8px;
     border-radius:999px;
+  }
+
+  /* Specials badge sits on the green box, so flip its colors to stay readable */
+  .special-name.sold-out::after{
+    color:var(--green);        /* green text */
+    background:#fff;           /* on a white pill */
   }
 
   footer{
