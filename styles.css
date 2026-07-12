@@ -104,7 +104,7 @@
   /* ---------- special ---------- */
   .special{
     text-align:center;
-    margin:18px -40px 6px;            /* negative L/R pushes the box outward; make more negative = wider */
+    margin:18px -32px 6px;            /* negative L/R pushes the box outward; make more negative = wider */
     background:var(--green);          /* green box */
     border-radius:22px;               /* rounded corners */
     padding:clamp(22px,5vw,32px);     /* breathing room inside the box */
