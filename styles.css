@@ -104,7 +104,7 @@
   /* ---------- special ---------- */
   .special{
     text-align:center;
-    margin:18px -32px 6px;            /* negative L/R pushes the box outward; make more negative = wider */
+    margin:18px -30px 6px;            /* negative L/R pushes the box outward; make more negative = wider */
     background:var(--green);          /* green box */
     border-radius:22px;               /* rounded corners */
     padding:clamp(22px,5vw,32px);     /* breathing room inside the box */
@@ -115,7 +115,7 @@
     font-weight:400;
     color:#fff;                       /* white banner text */
     text-transform:uppercase;
-    font-size:clamp(26px,5vw,28px);
+    font-size:clamp(24px,5vw,28px);
     margin:0 0 14px;            /* matches the gap under a .section h2 */
     display:inline-flex;
     align-items:center;
@@ -132,14 +132,14 @@
     text-transform:uppercase;
     letter-spacing:.02em;
     text-align:center;
-    font-size:clamp(15.5px,4vw,17px);
+    font-size:clamp(14px,4vw,17px);
     max-width:none;                   /* was 440px — let long names use the full width */
     white-space:nowrap;               /* keep each name on ONE line (no wrapping) */
     margin:0 auto 3px;         /* centered + 3px between name and its description */
   }
   .special-desc{
     color:#fff;                       /* white descriptions (readable on green) */
-    font-size:clamp(15px,3.8vw,16px);
+    font-size:clamp(13.5px,3.8vw,16px);
     text-align:center;
     max-width:440px;
     margin:0 auto 16px;        /* centered + 16px gap before the next name */
@@ -167,13 +167,13 @@
     color:var(--green-soft);
     text-transform:uppercase;
     letter-spacing:.02em;
-    font-size:clamp(15.5px,4vw,17px);
+    font-size:clamp(14px,4vw,17px);
     margin:0 0 3px;
   }
   .item p{
     margin:0;
     color:var(--ink);
-    font-size:clamp(15px,3.8vw,16px);
+    font-size:clamp(13.5px,3.8vw,16px);
   }
  /* ---------- sold out ---------- */
   /* Regular items: add class "sold-out" to the .item div */
